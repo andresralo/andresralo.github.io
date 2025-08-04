@@ -1,0 +1,2121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌹 Convierte $50 en $3,000 Mensuales con Flores Eternas | Master Class Exclusivo</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            overflow-x: hidden;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            background-size: 300% 300%;
+            animation: gradientShift 12s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .floating {
+            animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+        }
+
+        /* Urgency Bar Enhanced */
+        .urgency-bar {
+            background: linear-gradient(45deg, #ff2d55, #ff1744, #d50000);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-weight: 700;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 2000;
+            box-shadow: 0 4px 20px rgba(255, 23, 68, 0.4);
+            animation: urgencyPulse 3s infinite;
+        }
+
+        @keyframes urgencyPulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.02); opacity: 0.95; }
+        }
+
+        .countdown-timer {
+            display: inline-block;
+            margin-left: 10px;
+            font-weight: 900;
+            color: #ffeb3b;
+        }
+
+        /* Hero Section Enhanced */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            margin-top: 70px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.4);
+            z-index: 1;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><radialGradient id="sparkle" cx="50%" cy="50%" r="50%"><stop offset="0%" style="stop-color:white;stop-opacity:0.8"/><stop offset="100%" style="stop-color:white;stop-opacity:0"/></radialGradient></defs><circle cx="20" cy="30" r="1" fill="url(%23sparkle)"/><circle cx="80" cy="20" r="1.5" fill="url(%23sparkle)"/><circle cx="60" cy="70" r="1" fill="url(%23sparkle)"/><circle cx="30" cy="80" r="1.2" fill="url(%23sparkle)"/></svg>');
+            animation: sparkle 6s linear infinite;
+            z-index: 1;
+        }
+
+        @keyframes sparkle {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-content {
+            text-align: center;
+            color: white;
+            padding: 3rem 0;
+        }
+
+        .hero-eyebrow {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 12px 25px;
+            border-radius: 50px;
+            display: inline-block;
+            margin-bottom: 2rem;
+            font-weight: 600;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            animation: slideInDown 1s ease-out;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+            animation: slideInDown 1s ease-out 0.2s both;
+            line-height: 1.1;
+        }
+
+        .hero .subtitle {
+            font-size: 1.8rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.95;
+            animation: slideInUp 1s ease-out 0.4s both;
+            font-weight: 500;
+        }
+
+        .social-proof {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin: 2rem 0;
+            animation: slideInUp 1s ease-out 0.6s both;
+        }
+
+        .social-proof-item {
+            text-align: center;
+        }
+
+        .social-proof-number {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #ffeb3b;
+            display: block;
+        }
+
+        .social-proof-text {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            color: white;
+            padding: 25px 50px;
+            text-decoration: none;
+            border-radius: 60px;
+            font-size: 1.4rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 15px 40px rgba(255, 107, 53, 0.5);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            animation: ctaGlow 3s ease-in-out infinite;
+        }
+
+        @keyframes ctaGlow {
+            0%, 100% { box-shadow: 0 15px 40px rgba(255, 107, 53, 0.5); }
+            50% { box-shadow: 0 20px 50px rgba(255, 107, 53, 0.8); }
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.8s;
+        }
+
+        .cta-button:hover::before {
+            left: 100%;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 25px 60px rgba(255, 107, 53, 0.7);
+        }
+
+        /* Problem Section Enhanced */
+        .problem-section {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .problem-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .section-title {
+            font-size: 3.5rem;
+            text-align: center;
+            margin-bottom: 4rem;
+            font-weight: 900;
+            position: relative;
+            color: #2c3e50;
+        }
+
+        .section-title::after {
+            content: '';
+            width: 150px;
+            height: 6px;
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
+            display: block;
+            margin: 30px auto;
+            border-radius: 3px;
+        }
+
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+
+        .problem-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 3rem 2.5rem;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+            transition: all 0.4s ease;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .problem-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
+        }
+
+        .problem-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 30px 70px rgba(0,0,0,0.2);
+        }
+
+        .problem-icon {
+            font-size: 4rem;
+            color: #ff6b35;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .problem-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: #2c3e50;
+            font-weight: 700;
+        }
+
+        .problem-card p {
+            font-size: 1.1rem;
+            color: #5a6c7d;
+            line-height: 1.7;
+        }
+
+        /* Solution Section */
+        .solution-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 120px 0;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .solution-section::before {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            top: 10%;
+            right: 10%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .solution-section .section-title {
+            color: white;
+        }
+
+        .solution-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            margin-top: 4rem;
+        }
+
+        .solution-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .solution-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .solution-icon {
+            font-size: 3.5rem;
+            color: #ffeb3b;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .solution-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            color: white;
+            font-weight: 700;
+        }
+
+        .solution-card p {
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.6;
+        }
+
+        /* Product Gallery Enhanced */
+        .gallery-section {
+            padding: 120px 0;
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+        }
+
+        .gallery-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 4rem;
+        }
+
+        .gallery-intro h2 {
+            font-size: 3.2rem;
+            font-weight: 900;
+            color: #2c3e50;
+            margin-bottom: 2rem;
+        }
+
+        .gallery-intro p {
+            font-size: 1.3rem;
+            color: #5a6c7d;
+            line-height: 1.7;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+
+        .gallery-card {
+            background: white;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+        }
+
+        .gallery-card:hover {
+            transform: translateY(-20px);
+            box-shadow: 0 40px 80px rgba(0,0,0,0.25);
+        }
+
+        .gallery-image {
+            height: 350px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .gallery-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .gallery-card:hover .gallery-image img {
+            transform: scale(1.1);
+        }
+
+        .gallery-content {
+            padding: 2.5rem;
+        }
+
+        .gallery-content h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+            font-weight: 700;
+        }
+
+        .gallery-content p {
+            color: #5a6c7d;
+            line-height: 1.7;
+            font-size: 1.1rem;
+        }
+
+        /* Benefits Section with Modules */
+        .benefits-section {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            padding: 120px 0;
+            color: white;
+        }
+
+        .benefits-section .section-title {
+            color: white;
+        }
+
+        .modules-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 4rem;
+            margin-top: 4rem;
+        }
+
+        .modules-left {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border-radius: 25px;
+            padding: 3rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .modules-right {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            align-content: start;
+        }
+
+        .benefit-item {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .benefit-item:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .benefit-item i {
+            font-size: 2.5rem;
+            color: #ffeb3b;
+            margin-bottom: 1rem;
+        }
+
+        .benefit-item h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: white;
+            font-weight: 600;
+        }
+
+        .module-list {
+            list-style: none;
+        }
+
+        .module-list li {
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+            padding-left: 3rem;
+            font-size: 1.1rem;
+        }
+
+        .module-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 25px;
+            height: 25px;
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .module-list li::after {
+            content: '✓';
+            position: absolute;
+            left: 7px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        /* Stats Section Enhanced */
+        .stats-section {
+            background: white;
+            padding: 100px 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 3rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 25px;
+            color: white;
+            box-shadow: 0 20px 50px rgba(102, 126, 234, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 70px rgba(102, 126, 234, 0.4);
+        }
+
+        .stat-number {
+            font-size: 4rem;
+            font-weight: 900;
+            color: #ffeb3b;
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        .stat-label {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        /* Testimonials Enhanced */
+        .testimonials-section {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            padding: 120px 0;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 3rem;
+            border-radius: 25px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 70px rgba(0,0,0,0.15);
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            font-size: 5rem;
+            color: #ff6b35;
+            position: absolute;
+            top: -10px;
+            left: 30px;
+            font-family: serif;
+            opacity: 0.3;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+            color: #2c3e50;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .testimonial-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .author-info h4 {
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 0.2rem;
+        }
+
+        .author-info p {
+            color: #5a6c7d;
+            font-size: 0.9rem;
+        }
+
+        /* Pricing Section Enhanced */
+        .pricing-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 120px 0;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing-section::before {
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            top: -150px;
+            right: -150px;
+        }
+
+        .pricing-container {
+            max-width: 700px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border-radius: 35px;
+            padding: 4rem;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+            text-align: center;
+        }
+
+        .pricing-badge {
+            background: linear-gradient(45deg, #ff2d55, #ff6b35);
+            color: white;
+            padding: 15px 35px;
+            border-radius: 30px;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            display: inline-block;
+            animation: pulse 2s infinite;
+        }
+
+        .price-comparison {
+            margin: 3rem 0;
+        }
+
+        .original-price {
+            font-size: 2rem;
+            text-decoration: line-through;
+            opacity: 0.7;
+            margin-bottom: 1rem;
+        }
+
+        .current-price {
+            font-size: 5rem;
+            font-weight: 900;
+            color: #ffeb3b;
+            margin-bottom: 1rem;
+        }
+
+        .savings-badge {
+            background: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+
+        .features-list {
+            text-align: left;
+            margin: 3rem 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+
+        .features-list li {
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            list-style: none;
+            position: relative;
+            padding-left: 3rem;
+            font-size: 1.1rem;
+        }
+
+        .features-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #4caf50;
+            font-weight: bold;
+            font-size: 1.5rem;
+            background: rgba(76, 175, 80, 0.2);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .guarantee-section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2.5rem;
+            border-radius: 20px;
+            margin: 3rem 0;
+            border: 2px solid #4caf50;
+        }
+
+        .guarantee-icon {
+            font-size: 4rem;
+            color: #4caf50;
+            margin-bottom: 1rem;
+        }
+
+        /* FAQ Enhanced */
+        .faq-section {
+            background: white;
+            padding: 120px 0;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: #f8f9fa;
+            margin-bottom: 1rem;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            border-color: #ff6b35;
+        }
+
+        .faq-question {
+            padding: 2rem;
+            background: #2c3e50;
+            color: white;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            padding: 2rem;
+            background: white;
+            color: #5a6c7d;
+            line-height: 1.7;
+            font-size: 1.1rem;
+        }
+
+        /* Footer Enhanced */
+        .footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .footer-content {
+            margin-bottom: 2rem;
+        }
+
+        .footer-logo {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #ff6b35;
+            margin-bottom: 1rem;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.3rem;
+            }
+            
+            .section-title {
+                font-size: 2.5rem;
+            }
+            
+            .current-price {
+                font-size: 3.5rem;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .modules-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .social-proof {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .cta-button {
+                padding: 20px 35px;
+                font-size: 1.2rem;
+            }
+        }
+
+        /* Exit Intent Modal Enhanced */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 3000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin: 3% auto;
+            padding: 3rem;
+            border-radius: 25px;
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+            position: relative;
+            animation: modalSlideIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 3px solid rgba(255, 255, 255, 0.3);
+        }
+
+        @keyframes modalSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-100px) scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .modal-content h2 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            color: #ffeb3b;
+        }
+
+        .close {
+            position: absolute;
+            right: 25px;
+            top: 20px;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+            color: rgba(255, 255, 255, 0.7);
+            transition: all 0.3s ease;
+        }
+
+        .close:hover {
+            color: white;
+            transform: scale(1.2);
+        }
+
+        /* Scroll Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .slide-in-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.8s ease;
+        }
+
+        .slide-in-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .slide-in-right {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: all 0.8s ease;
+        }
+
+        .slide-in-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Enhanced Urgency Bar with Countdown -->
+    <div class="urgency-bar">
+        🚨 <strong>ÚLTIMA OPORTUNIDAD:</strong> Solo quedan <span class="countdown-timer" id="countdown">23:59:45</span> para asegurar tu precio especial de lanzamiento 🚨
+    </div>
+
+    <!-- Enhanced Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-eyebrow">
+                    ✨ Más de 2,847 mujeres ya cambiaron su vida financiera
+                </div>
+                <h1 class="floating">
+                    🌹 De $50 de Inversión a <br>
+                    <span style="color: #ffeb3b;">$3,000 Mensuales</span><br>
+                    con Flores Eternas
+                </h1>
+                <p class="subtitle">
+                    El único Master Class que te enseña el sistema completo para crear un negocio rentable desde casa, sin experiencia previa y con resultados garantizados en 30 días
+                </p>
+                
+                <!-- Social Proof -->
+                <div class="social-proof">
+                    <div class="social-proof-item">
+                        <span class="social-proof-number">2,847</span>
+                        <span class="social-proof-text">Estudiantes Exitosas</span>
+                    </div>
+                    <div class="social-proof-item">
+                        <span class="social-proof-number">97%</span>
+                        <span class="social-proof-text">Tasa de Éxito</span>
+                    </div>
+                    <div class="social-proof-item">
+                        <span class="social-proof-number">$2,845</span>
+                        <span class="social-proof-text">Ganancia Promedio</span>
+                    </div>
+                </div>
+
+                <a href="https://go.hotmart.com/B101167316L?ap=9cde" class="cta-button" onclick="trackClick('hero-cta')">
+                    🚀 ¡Quiero Transformar Mi Vida Ahora!
+                </a>
+                
+                <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">
+                    ⚡ Acceso inmediato • 💳 Garantía de 30 días • 🎓 Certificación incluida
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Problem Section -->
+    <section class="problem-section">
+        <div class="container">
+            <h2 class="section-title fade-in">¿Te Sientes Identificada? 😔</h2>
+            <p style="text-align: center; font-size: 1.4rem; margin-bottom: 3rem; color: #2c3e50; max-width: 800px; margin-left: auto; margin-right: auto;" class="fade-in">
+                <strong>Miles de mujeres luchan con estos mismos problemas todos los días...</strong>
+            </p>
+            
+            <div class="problem-grid">
+                <div class="problem-card fade-in">
+                    <i class="fas fa-money-bill-wave problem-icon"></i>
+                    <h3>💸 "Necesito ingresos extra URGENTE"</h3>
+                    <p>Los gastos aumentan, el salario no alcanza y necesitas una fuente de ingresos adicional YA, pero no sabes por dónde empezar sin invertir una fortuna.</p>
+                </div>
+                
+                <div class="problem-card fade-in">
+                    <i class="fas fa-clock problem-icon"></i>
+                    <h3>⏰ "No tengo tiempo para otro trabajo"</h3>
+                    <p>Entre el trabajo, la casa y la familia, apenas tienes tiempo libre. Necesitas algo que puedas hacer en TUS horarios, desde TU casa.</p>
+                </div>
+                
+                <div class="problem-card fade-in">
+                    <i class="fas fa-heart-broken problem-icon"></i>
+                    <h3>💔 "Tengo talento pero no sé monetizarlo"</h3>
+                    <p>Amas crear cosas hermosas, tienes manos hábiles, pero no tienes idea de cómo convertir tu creatividad en un negocio rentable.</p>
+                </div>
+                
+                <div class="problem-card fade-in">
+                    <i class="fas fa-question-circle problem-icon"></i>
+                    <h3>❓ "No sé nada de negocios"</h3>
+                    <p>Te da miedo emprender porque no sabes cómo calcular precios, crear una marca, manejar redes sociales o conseguir clientes.</p>
+                </div>
+                
+                <div class="problem-card fade-in">
+                    <i class="fas fa-tired problem-icon"></i>
+                    <h3>😩 "Ya probé de todo y nada funciona"</h3>
+                    <p>Has intentado diferentes negocios online, cursos que no te enseñaron nada práctico, y ya estás cansada de promesas vacías.</p>
+                </div>
+                
+                <div class="problem-card fade-in">
+                    <i class="fas fa-chart-line-down problem-icon"></i>
+                    <h3>📉 "Vivo con incertidumbre financiera"</h3>
+                    <p>No puedes planificar tu futuro porque dependes 100% de un salario que puede desaparecer en cualquier momento.</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 4rem;" class="fade-in">
+                <h3 style="font-size: 2.2rem; color: #ff2d55; font-weight: 900; margin-bottom: 1rem;">
+                    😰 Si te identificas con 3 o más situaciones...
+                </h3>
+                <p style="font-size: 1.3rem; color: #2c3e50; font-weight: 600;">
+                    <strong>¡Es hora de que conozcas la solución que está cambiando miles de vidas!</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Solution Section -->
+    <section class="solution-section">
+        <div class="container">
+            <h2 class="section-title fade-in">🎯 ¡Aquí Está Tu Solución Definitiva!</h2>
+            <p style="text-align: center; font-size: 1.4rem; margin-bottom: 4rem; opacity: 0.95; max-width: 900px; margin-left: auto; margin-right: auto;" class="fade-in">
+                <strong>El Master Class "CAJAS Y FLORES ETERNAS" es el único sistema completo que te lleva de CERO conocimiento a tener tu propio negocio rentable en solo 30 días</strong>
+            </p>
+            
+            <div class="solution-grid">
+                <div class="solution-card slide-in-left">
+                    <i class="fas fa-rocket solution-icon"></i>
+                    <h3>🚀 Sistema Probado y Escalable</h3>
+                    <p>Método paso a paso usado por más de 2,847 mujeres exitosas. No es teoría, son resultados reales comprobados.</p>
+                </div>
+                
+                <div class="solution-card slide-in-right">
+                    <i class="fas fa-home solution-icon"></i>
+                    <h3>🏠 100% Desde Casa</h3>
+                    <p>Trabaja en pijama, en tus horarios libres. Solo necesitas 2-3 horas al día para generar ingresos de tiempo completo.</p>
+                </div>
+                
+                <div class="solution-card slide-in-left">
+                    <i class="fas fa-dollar-sign solution-icon"></i>
+                    <h3>💰 Inversión Mínima, Ganancia Máxima</h3>
+                    <p>Comienza con menos de $50 y genera hasta $3,000 mensuales. ROI del 6,000% comprobado por nuestras estudiantes.</p>
+                </div>
+                
+                <div class="solution-card slide-in-right">
+                    <i class="fas fa-graduation-cap solution-icon"></i>
+                    <h3>🎓 De Principiante a Experta</h3>
+                    <p>Te enseñamos TODO: desde crear tu primera rosa eterna hasta manejar redes sociales como una profesional.</p>
+                </div>
+                
+                <div class="solution-card slide-in-left">
+                    <i class="fas fa-infinity solution-icon"></i>
+                    <h3>♾️ Mercado Infinito</h3>
+                    <p>Las flores eternas NUNCA pasan de moda. Bodas, cumpleaños, San Valentín, graduaciones... ¡Siempre hay demanda!</p>
+                </div>
+                
+                <div class="solution-card slide-in-right">
+                    <i class="fas fa-handshake solution-icon"></i>
+                    <h3>🤝 Soporte Total</h3>
+                    <p>No estarás sola. Comunidad exclusiva, soporte directo y mentorías grupales para garantizar tu éxito.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Product Gallery -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-intro fade-in">
+                <h2>✨ Mira Lo Que Vas a Crear</h2>
+                <p>Estos son solo algunos ejemplos de los productos que podrás hacer después del Master Class. <strong>Cada uno puede venderse entre $25 y $150 dólares</strong> dependiendo del diseño y materiales.</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-card fade-in">
+                    <div class="gallery-image">
+                        <img src="https://i.pinimg.com/736x/4d/7f/28/4d7f282fdd6e63e2286b1036ea8690e8.jpg" 
+                             alt="Ramo elegante con mariposas doradas">
+                    </div>
+                    <div class="gallery-content">
+                        <h3>🦋 Ramos Elegantes Premium</h3>
+                        <p><strong>Precio de venta: $75-$120</strong><br>
+                        Aprende a crear hermosos ramos con flores eternas y detalles únicos como mariposas doradas. Perfectos para ocasiones especiales.</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-card fade-in">
+                    <div class="gallery-image">
+                        <img src="https://i.pinimg.com/1200x/b8/e3/4d/b8e34d2be0ed8934bebcebe5aec52ce3.jpg" 
+                             alt="Cajas corazón con flores y chocolates">
+                    </div>
+                    <div class="gallery-content">
+                        <h3>💝 Cajas Corazón de Lujo</h3>
+                        <p><strong>Precio de venta: $85-$150</strong><br>
+                        Diseña elegantes cajas en forma de corazón combinando flores eternas con chocolates premium. ¡El regalo perfecto!</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-card fade-in">
+                    <div class="gallery-image">
+                        <img src="https://i.pinimg.com/736x/66/22/67/6622674a07d63951f40749421f57c2a8.jpg" 
+                             alt="Arreglo de princesa con corona">
+                    </div>
+                    <div class="gallery-content">
+                        <h3>👑 Arreglos Temáticos VIP</h3>
+                        <p><strong>Precio de venta: $90-$130</strong><br>
+                        Crea arreglos únicos con coronas y temas especiales. Ideales para quinceañeras, graduaciones y celebraciones importantes.</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-card fade-in">
+                    <div class="gallery-image">
+                        <img src="https://i.pinimg.com/736x/40/a6/24/40a624a0d18c7f7b50d555a565ab79f9.jpg" 
+                             alt="Diseño creativo con flores eternas">
+                    </div>
+                    <div class="gallery-content">
+                        <h3>🎨 Diseños Personalizados</h3>
+                        <p><strong>Precio de venta: $65-$110</strong><br>
+                        Desarrolla tu propio estilo único que te diferencie en el mercado. ¡Las posibilidades son infinitas!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 4rem; background: rgba(255, 255, 255, 0.9); padding: 3rem; border-radius: 25px;" class="fade-in">
+                <h3 style="font-size: 2.2rem; color: #ff6b35; margin-bottom: 1rem; font-weight: 900;">
+                    💰 Cálculo Real de Ganancias
+                </h3>
+                <p style="font-size: 1.3rem; color: #2c3e50; line-height: 1.6;">
+                    <strong>Si vendes solo 1 producto al día (30 al mes) a $75 promedio:</strong><br>
+                    <span style="color: #4caf50; font-size: 1.5rem; font-weight: 900;">$2,250 mensuales - Costo de materiales $450 = $1,800 de ganancia neta</span><br>
+                    <em>¡Y eso es siendo conservadores! Nuestras estudiantes venden mucho más.</em>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Benefits with Modules -->
+    <section class="benefits-section">
+        <div class="container">
+            <h2 class="section-title fade-in">🎯 Todo Lo Que Vas a Dominar</h2>
+            <p style="text-align: center; font-size: 1.3rem; margin-bottom: 4rem; opacity: 0.9; max-width: 800px; margin-left: auto; margin-right: auto;" class="fade-in">
+                <strong>12 módulos completos que te convertirán en una experta en flores eternas y negocios rentables</strong>
+            </p>
+            
+            <div class="modules-container">
+                <div class="modules-left slide-in-left">
+                    <h3 style="font-size: 2rem; margin-bottom: 2rem; color: #ffeb3b;">
+                        📚 Contenido del Master Class
+                    </h3>
+                    <ul class="module-list">
+                        <li><strong>MÓDULO 1:</strong> Bienvenida y Mentalidad de Éxito</li>
+                        <li><strong>MÓDULO 2:</strong> Creando tu Marca Corporativa desde Cero</li>
+                        <li><strong>MÓDULO 3:</strong> Desarrollo de Catálogo Profesional</li>
+                        <li><strong>MÓDULO 4:</strong> Costos y Presupuestos Rentables</li>
+                        <li><strong>MÓDULO 5:</strong> Herramientas de Publicidad que Venden</li>
+                        <li><strong>MÓDULO 6:</strong> Redes Sociales que Generan Dinero</li>
+                        <li><strong>MÓDULO 7:</strong> Atención al Cliente VIP</li>
+                        <li><strong>MÓDULO 8:</strong> Materiales y Proveedores Secretos</li>
+                        <li><strong>MÓDULO 9:</strong> Técnicas Avanzadas de Flores Eternas</li>
+                        <li><strong>MÓDULO 10:</strong> Moños y Acabados Profesionales</li>
+                        <li><strong>MÓDULO 11:</strong> Cajas Sorpresa que Enamoran</li>
+                        <li><strong>MÓDULO 12:</strong> Cajas Circulares y Diseños Exclusivos</li>
+                    </ul>
+                </div>
+                
+                <div class="modules-right">
+                    <div class="benefit-item slide-in-right">
+                        <i class="fas fa-palette"></i>
+                        <h4>Identidad Visual</h4>
+                        <p>Logo y branding profesional</p>
+                    </div>
+                    
+                    <div class="benefit-item slide-in-right">
+                        <i class="fas fa-calculator"></i>
+                        <h4>Precios Rentables</h4>
+                        <p>Fórmulas de costos exactas</p>
+                    </div>
+                    
+                    <div class="benefit-item slide-in-right">
+                        <i class="fas fa-camera"></i>
+                        <h4>Fotografía Pro</h4>
+                        <p>Fotos que venden más</p>
+                    </div>
+                    
+                    <div class="benefit-item slide-in-right">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h4>Redes Sociales</h4>
+                        <p>Instagram, TikTok, Facebook</p>
+                    </div>
+                    
+                    <div class="benefit-item slide-in-right">
+                        <i class="fas fa-users"></i>
+                        <h4>Fidelización</h4>
+                        <p>Clientes que regresan</p>
+                    </div>
+                    
+                    <div class="benefit-item slide-in-right">
+                        <i class="fas fa-certificate"></i>
+                        <h4>Certificación</h4>
+                        <p>Avalado por Hotmart</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Stats -->
+    <section class="stats-section">
+        <div class="container">
+            <h2 class="section-title fade-in">📈 Resultados Que Hablan Por Sí Solos</h2>
+            <div class="stats-grid">
+                <div class="stat-card fade-in">
+                    <span class="stat-number" data-target="2847">0</span>
+                    <p class="stat-label">Mujeres Transformadas</p>
+                </div>
+                
+                <div class="stat-card fade-in">
+                    <span class="stat-number" data-target="97">0%</span>
+                    <p class="stat-label">Tasa de Éxito Comprobada</p>
+                </div>
+                
+                <div class="stat-card fade-in">
+                    <span class="stat-number" data-target="2845">$0</span>
+                    <p class="stat-label">Ganancia Promedio Mensual</p>
+                </div>
+                
+                <div class="stat-card fade-in">
+                    <span class="stat-number" data-target="30">0</span>
+                    <p class="stat-label">Días para Ver Resultados</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title fade-in">💬 Historias Reales de Transformación</h2>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 4rem; color: #2c3e50;" class="fade-in">
+                <strong>Lee lo que dicen nuestras estudiantes que ya están viviendo su transformación financiera</strong>
+            </p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <p class="testimonial-text">
+                        "En solo 6 semanas pasé de estar desempleada a generar $3,200 mensuales. Mis cajas corazón se volvieron virales en Instagram y ahora tengo lista de espera. ¡No puedo creer que esto sea mi nueva realidad!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">MG</div>
+                        <div class="author-info">
+                            <h4>María González</h4>
+                            <p>Madre soltera, Bogotá • $3,200/mes</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card fade-in">
+                    <p class="testimonial-text">
+                        "Trabajo de 8 a 5 en una oficina, pero ahora genero más dinero con mis flores eternas que con mi trabajo principal. Mis ramos con mariposas son únicos en mi ciudad. ¡Pronto renuncio para dedicarme 100% a esto!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">AR</div>
+                        <div class="author-info">
+                            <h4>Ana Rodríguez</h4>
+                            <p>Contadora, Medellín • $2,800/mes</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card fade-in">
+                    <p class="testimonial-text">
+                        "Nunca había tenido un negocio propio y tenía miedo. Pero el curso me enseñó TODO paso a paso. En 2 meses recuperé mi inversión y ahora gano $2,400 mensuales trabajando solo los fines de semana."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">CL</div>
+                        <div class="author-info">
+                            <h4>Carmen López</h4>
+                            <p>Ama de casa, Cali • $2,400/mes</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card fade-in">
+                    <p class="testimonial-text">
+                        "Soy abuela de 58 años y pensé que era muy tarde para emprender. ¡Qué equivocada estaba! Mis nietas me ayudan con las redes sociales y ya tengo mi propio local. Ganamos $4,100 mensuales en familia."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">LM</div>
+                        <div class="author-info">
+                            <h4>Lucía Martínez</h4>
+                            <p>Emprendedora senior, Quito • $4,100/mes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Pricing Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <h2 class="section-title fade-in">🎯 Tu Inversión Para Cambiar Tu Vida</h2>
+            <div class="pricing-container fade-in">
+                <div class="pricing-badge">
+                    🔥 OFERTA DE LANZAMIENTO
+                </div>
+                
+                <div class="price-comparison">
+                    <p class="original-price" id="originalPrice">Valor normal: $397 USD</p>
+                    <p class="current-price" id="dynamicPrice">$97 USD</p>
+                    <div class="savings-badge">
+                        ¡AHORRAS $300 HOY!
+                    </div>
+                </div>
+                
+                <p style="font-size: 1.3rem; margin-bottom: 3rem; opacity: 0.9;">
+                    <strong>¡Recupera tu inversión vendiendo solo 2 productos!</strong>
+                </p>
+                
+                <ul class="features-list">
+                    <li>✅ Master Class completo con 12 módulos paso a paso</li>
+                    <li>✅ Técnicas secretas de flores eternas que duran años</li>
+                    <li>✅ Sistema completo de creación de marca y logo</li>
+                    <li>✅ Fórmulas exactas para calcular precios rentables</li>
+                    <li>✅ Estrategias avanzadas de redes sociales que venden</li>
+                    <li>✅ Lista de proveedores exclusivos con descuentos</li>
+                    <li>✅ Plantillas de contratos y documentos legales</li>
+                    <li>✅ Guía completa de fotografía de productos</li>
+                    <li>✅ Comunidad privada de emprendedoras exitosas</li>
+                    <li>✅ Soporte directo durante 6 meses</li>
+                    <li>✅ Certificado oficial avalado por Hotmart</li>
+                    <li>✅ Acceso de por vida + actualizaciones gratis</li>
+                    <li>✅ Bonos exclusivos valorados en $200 adicionales</li>
+                </ul>
+                
+                <div class="guarantee-section">
+                    <i class="fas fa-shield-alt guarantee-icon"></i>
+                    <h3>🛡️ Garantía Total de 30 Días</h3>
+                    <p style="font-size: 1.1rem; line-height: 1.6;">
+                        Si en 30 días no estás 100% satisfecha con el contenido, te devolvemos cada peso sin preguntas. <strong>¡El riesgo es CERO para ti!</strong>
+                    </p>
+                </div>
+                
+                <a href="https://go.hotmart.com/B101167316L?ap=9cde" class="cta-button" onclick="trackClick('main-cta')" style="font-size: 1.3rem; padding: 25px 50px; margin: 2rem 0;">
+                    🚀 <span id="ctaPrice">¡SÍ, QUIERO CAMBIAR MI VIDA - $97!</span>
+                </a>
+                
+                <p style="margin-top: 2rem; font-size: 1rem; opacity: 0.8;">
+                    💳 Acepta todas las tarjetas • 🔒 Pago 100% seguro con Hotmart<br>
+                    🌍 <span id="currencyNote">Precio se convierte automáticamente a tu moneda local</span><br>
+                    ⚡ <strong>Acceso inmediato después del pago</strong>
+                </p>
+                
+                <div style="background: rgba(255, 235, 59, 0.2); padding: 2rem; border-radius: 15px; margin-top: 2rem; border: 2px solid #ffeb3b;">
+                    <h4 style="color: #ffeb3b; font-size: 1.4rem; margin-bottom: 1rem;">
+                        ⚠️ ATENCIÓN: Esta oferta expira en:
+                    </h4>
+                    <div id="countdown2" style="font-size: 2rem; font-weight: 900; color: #ffeb3b;">
+                        23:59:45
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title fade-in">❓ Preguntas Frecuentes</h2>
+            <div class="faq-container">
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>¿Necesito experiencia previa en manualidades?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <strong>¡SÍ, y muchas ganan más!</strong> Nuestro promedio es $2,845 mensuales, pero tenemos estudiantes ganando $4,000+ al mes. Todo depende del tiempo que dediques y qué tan bien implementes las estrategias. Con solo 1-2 productos al día ya superas los $2,000 mensuales.
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>¿Cuánto tiempo necesito dedicar al día?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Puedes empezar con solo 2-3 horas al día. Una vez que domines las técnicas, crear un producto te tomará 45-60 minutos. Muchas de nuestras estudiantes trabajan solo fines de semana y generan ingresos de tiempo completo.
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>¿El acceso es realmente de por vida?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <strong>¡Sí, para SIEMPRE!</strong> Una vez que compras, tienes acceso ilimitado a todo el contenido, actualizaciones futuras, nuevos módulos y la comunidad privada. Sin pagos recurrentes, sin renovaciones.
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>¿Funciona en mi país?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        ¡Por supuesto! Tenemos estudiantes exitosas en más de 15 países. Los materiales se consiguen en cualquier parte del mundo, y te enseñamos cómo encontrar proveedores locales en tu ciudad.
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>¿Qué pasa si no funciona para mí?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <strong>Tienes 30 días completos para probar todo.</strong> Si por cualquier razón no estás satisfecha, te devolvemos el 100% de tu dinero sin hacer preguntas. El riesgo es CERO para ti.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section style="background: linear-gradient(135deg, #ff2d55 0%, #ff6b35 100%); padding: 100px 0; color: white;">
+        <div class="container" style="text-align: center;">
+            <h2 style="font-size: 3.5rem; font-weight: 900; margin-bottom: 2rem;" class="fade-in">
+                🚨 ¡Tu Momento Es AHORA!
+            </h2>
+            <p style="font-size: 1.5rem; margin-bottom: 3rem; opacity: 0.95;" class="fade-in">
+                Tienes dos opciones: <strong>seguir como hasta ahora</strong> o <strong>tomar acción HOY</strong> y cambiar tu vida para siempre
+            </p>
+            
+            <div style="background: rgba(255, 255, 255, 0.1); padding: 3rem; border-radius: 25px; margin: 3rem 0; backdrop-filter: blur(10px);" class="fade-in">
+                <h3 style="font-size: 2.2rem; margin-bottom: 2rem; color: #ffeb3b;">
+                    ⏰ Esta Oportunidad Se Cierra En:
+                </h3>
+                <div id="countdown3" style="font-size: 3rem; font-weight: 900; color: #ffeb3b; margin-bottom: 2rem;">
+                    23:59:45
+                </div>
+                <p style="font-size: 1.3rem; opacity: 0.9;">
+                    Después de esta fecha, el precio vuelve a $397 USD
+                </p>
+            </div>
+            
+            <a href="https://go.hotmart.com/B101167316L?ap=9cde" class="cta-button" onclick="trackClick('final-cta')" style="font-size: 1.4rem; padding: 30px 60px; background: linear-gradient(45deg, #ffeb3b, #4caf50); color: #2c3e50;">
+                🎯 ¡QUIERO MI TRANSFORMACIÓN AHORA - $97!
+            </a>
+            
+            <p style="margin-top: 2rem; font-size: 1rem; opacity: 0.8;">
+                ⚡ Acceso inmediato • 🛡️ Garantía 30 días • 🎓 Certificación incluida
+            </p>
+        </div>
+    </section>
+
+    <!-- Enhanced Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">🌹 Flores Eternas Master Class</div>
+                <p style="margin-bottom: 2rem;">Transformando vidas a través del emprendimiento creativo</p>
+                
+                <div style="display: flex; justify-content: center; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap;">
+                    <div style="text-align: center;">
+                        <strong>2,847+</strong><br>
+                        <small>Estudiantes Exitosas</small>
+                    </div>
+                    <div style="text-align: center;">
+                        <strong>97%</strong><br>
+                        <small>Tasa de Satisfacción</small>
+                    </div>
+                    <div style="text-align: center;">
+                        <strong>$2,845</strong><br>
+                        <small>Ganancia Promedio</small>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="border-top: 1px solid #333; padding-top: 2rem; opacity: 0.7;">
+                <p>&copy; 2025 MasterClasses.La® - Todos los derechos reservados</p>
+                <p style="margin-top: 0.5rem;">🌹 Tu futuro financiero comienza hoy</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Enhanced Exit Intent Modal -->
+    <div id="exitModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>🛑 ¡ESPERA!</h2>
+            <p style="font-size: 1.3rem; margin-bottom: 2rem;">
+                ¿Te vas sin asegurar tu futuro financiero?
+            </p>
+            
+            <h3 style="color: #ffeb3b; font-size: 2rem; margin-bottom: 1rem;">
+                🎁 OFERTA ESPECIAL DE ÚLTIMA OPORTUNIDAD
+            </h3>
+            
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">
+                <strong>Solo por intentar salir de esta página:</strong>
+            </p>
+            
+            <div style="background: rgba(255, 255, 255, 0.1); padding: 2rem; border-radius: 15px; margin: 2rem 0;">
+                <p style="font-size: 1.8rem; color: #ffeb3b; font-weight: 900;" id="modalPrice">
+                    <strong>¡Solo $67 USD en lugar de $97!</strong>
+                </p>
+                <p style="font-size: 1rem; opacity: 0.8;">
+                    (Ahorro adicional de $30 - Solo válido por abandonar la página)
+                </p>
+            </div>
+            
+            <a href="https://go.hotmart.com/B101167316L?ap=9cde" class="cta-button" onclick="trackClick('exit-intent')" style="margin: 1rem 0;">
+                🔥 ¡TOMAR OFERTA ESPECIAL AHORA!
+            </a>
+            
+            <p style="font-size: 0.9rem; margin-top: 1rem; opacity: 0.7;">
+                ⚠️ Esta oferta expira cuando cierres esta ventana
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Enhanced Countdown Timer
+        function startCountdown() {
+            let timeLeft = 24 * 60 * 60; // 24 hours in seconds
+            
+            function updateCountdown() {
+                const hours = Math.floor(timeLeft / 3600);
+                const minutes = Math.floor((timeLeft % 3600) / 60);
+                const seconds = timeLeft % 60;
+                
+                const timeString = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                
+                document.getElementById('countdown').textContent = timeString;
+                document.getElementById('countdown2').textContent = timeString;
+                document.getElementById('countdown3').textContent = timeString;
+                
+                if (timeLeft > 0) {
+                    timeLeft--;
+                } else {
+                    timeLeft = 24 * 60 * 60; // Reset to 24 hours
+                }
+            }
+            
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+        }
+
+        // Enhanced Scroll Animations
+        function observeElements() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right').forEach(el => {
+                observer.observe(el);
+            });
+        }
+
+        // Enhanced Number Animation
+        function animateNumbers() {
+            const numbers = document.querySelectorAll('.stat-number[data-target]');
+            numbers.forEach(number => {
+                const target = parseInt(number.getAttribute('data-target'));
+                const isPercentage = number.textContent.includes('%');
+                const isDollar = number.textContent.includes('Absolutamente NO!</strong> El Master Class está diseñado para principiantes completas. Empezamos desde lo más básico y te llevamos de la mano hasta convertirte en una experta. Más del 85% de nuestras estudiantes exitosas nunca habían hecho manualidades antes.
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>¿Cuánto dinero necesito para empezar?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Con $50-80 USD ya puedes comprar materiales para hacer tus primeros 5-8 productos. Te enseñamos exactamente dónde comprar al mejor precio y cómo reinvertir tus primeras ganancias para crecer rápidamente.
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>¿Realmente puedo ganar $2,000+ mensuales?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <strong>¡);
+                
+                let current = 0;
+                const increment = target / 60;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    
+                    let displayNumber = Math.floor(current);
+                    if (isDollar) {
+                        number.textContent = 'Absolutamente NO!</strong> El Master Class está diseñado para principiantes completas. Empezamos desde lo más básico y te llevamos de la mano hasta convertirte en una experta. Más del 85% de nuestras estudiantes exitosas nunca habían hecho manualidades antes.
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>¿Cuánto dinero necesito para empezar?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Con $50-80 USD ya puedes comprar materiales para hacer tus primeros 5-8 productos. Te enseñamos exactamente dónde comprar al mejor precio y cómo reinvertir tus primeras ganancias para crecer rápidamente.
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>¿Realmente puedo ganar $2,000+ mensuales?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <strong>¡ + displayNumber.toLocaleString();
+                    } else if (isPercentage) {
+                        number.textContent = displayNumber + '%';
+                    } else {
+                        number.textContent = displayNumber.toLocaleString();
+                    }
+                }, 50);
+            });
+        }
+
+        // Stats animation trigger
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateNumbers();
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        });
+
+        // Enhanced Exit Intent
+        let exitShown = false;
+        let mouseLeaveCount = 0;
+
+        document.addEventListener('mouseleave', function(e) {
+            if (e.clientY <= 0 && !exitShown) {
+                mouseLeaveCount++;
+                if (mouseLeaveCount >= 2) { // Show after second attempt
+                    exitShown = true;
+                    document.getElementById('exitModal').style.display = 'block';
+                }
+            }
+        });
+
+        // Modal close functionality
+        document.querySelector('.close').addEventListener('click', function() {
+            document.getElementById('exitModal').style.display = 'none';
+        });
+
+        window.addEventListener('click', function(e) {
+            const modal = document.getElementById('exitModal');
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+        // FAQ Toggle functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                const icon = this.querySelector('i');
+                
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    // Close all other answers
+                    document.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+                    document.querySelectorAll('.faq-question i').forEach(i => i.style.transform = 'rotate(0deg)');
+                    
+                    answer.style.display = 'block';
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+
+        // Enhanced Currency Detection and Conversion
+        const currencyRates = {
+            'USD': { symbol: 'Absolutamente NO!</strong> El Master Class está diseñado para principiantes completas. Empezamos desde lo más básico y te llevamos de la mano hasta convertirte en una experta. Más del 85% de nuestras estudiantes exitosas nunca habían hecho manualidades antes.
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>¿Cuánto dinero necesito para empezar?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Con $50-80 USD ya puedes comprar materiales para hacer tus primeros 5-8 productos. Te enseñamos exactamente dónde comprar al mejor precio y cómo reinvertir tus primeras ganancias para crecer rápidamente.
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>¿Realmente puedo ganar $2,000+ mensuales?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <strong>¡, rate: 1, name: 'USD' },
+            'EUR': { symbol: '€', rate: 0.85, name: 'EUR' },
+            'GBP': { symbol: '£', rate: 0.73, name: 'GBP' },
+            'CAD': { symbol: 'CAbsolutamente NO!</strong> El Master Class está diseñado para principiantes completas. Empezamos desde lo más básico y te llevamos de la mano hasta convertirte en una experta. Más del 85% de nuestras estudiantes exitosas nunca habían hecho manualidades antes.
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>¿Cuánto dinero necesito para empezar?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Con $50-80 USD ya puedes comprar materiales para hacer tus primeros 5-8 productos. Te enseñamos exactamente dónde comprar al mejor precio y cómo reinvertir tus primeras ganancias para crecer rápidamente.
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>¿Realmente puedo ganar $2,000+ mensuales?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <strong>¡, rate: 1.25, name: 'CAD' },
+            'AUD': { symbol: 'AAbsolutamente NO!</strong> El Master Class está diseñado para principiantes completas. Empezamos desde lo más básico y te llevamos de la mano hasta convertirte en una experta. Más del 85% de nuestras estudiantes exitosas nunca habían hecho manualidades antes.
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>¿Cuánto dinero necesito para empezar?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Con $50-80 USD ya puedes comprar materiales para hacer tus primeros 5-8 productos. Te enseñamos exactamente dónde comprar al mejor precio y cómo reinvertir tus primeras ganancias para crecer rápidamente.
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>¿Realmente puedo ganar $2,000+ mensuales?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <strong>¡, rate: 1.35, name: 'AUD' },
+            'MXN': { symbol: 'Absolutamente NO!</strong> El Master Class está diseñado para principiantes completas. Empezamos desde lo más básico y te llevamos de la mano hasta convertirte en una experta. Más del 85% de nuestras estudiantes exitosas nunca habían hecho manualidades antes.
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>¿Cuánto dinero necesito para empezar?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Con $50-80 USD ya puedes comprar materiales para hacer tus primeros 5-8 productos. Te enseñamos exactamente dónde comprar al mejor precio y cómo reinvertir tus primeras ganancias para crecer rápidamente.
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>¿Realmente puedo ganar $2,000+ mensuales?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <strong>¡, rate: 18.5, name: 'MXN' },
+            'BRL': { symbol: 'RAbsolutamente NO!</strong> El Master Class está diseñado para principiantes completas. Empezamos desde lo más básico y te llevamos de la mano hasta convertirte en una experta. Más del 85% de nuestras estudiantes exitosas nunca habían hecho manualidades antes.
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>¿Cuánto dinero necesito para empezar?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Con $50-80 USD ya puedes comprar materiales para hacer tus primeros 5-8 productos. Te enseñamos exactamente dónde comprar al mejor precio y cómo reinvertir tus primeras ganancias para crecer rápidamente.
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>¿Realmente puedo ganar $2,000+ mensuales?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <strong>¡, rate: 5.2, name: 'BRL' },
+            'ARS': { symbol: 'Absolutamente NO!</strong> El Master Class está diseñado para principiantes completas. Empezamos desde lo más básico y te llevamos de la mano hasta convertirte en una experta. Más del 85% de nuestras estudiantes exitosas nunca habían hecho manualidades antes.
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>¿Cuánto dinero necesito para empezar?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Con $50-80 USD ya puedes comprar materiales para hacer tus primeros 5-8 productos. Te enseñamos exactamente dónde comprar al mejor precio y cómo reinvertir tus primeras ganancias para crecer rápidamente.
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>¿Realmente puedo ganar $2,000+ mensuales?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <strong>¡, rate: 350, name: 'ARS' },
+            'COP': { symbol: 'Absolutamente NO!</strong> El Master Class está diseñado para principiantes completas. Empezamos desde lo más básico y te llevamos de la mano hasta convertirte en una experta. Más del 85% de nuestras estudiantes exitosas nunca habían hecho manualidades antes.
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>¿Cuánto dinero necesito para empezar?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Con $50-80 USD ya puedes comprar materiales para hacer tus primeros 5-8 productos. Te enseñamos exactamente dónde comprar al mejor precio y cómo reinvertir tus primeras ganancias para crecer rápidamente.
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>¿Realmente puedo ganar $2,000+ mensuales?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <strong>¡, rate: 4200, name: 'COP' },
+            'CLP': { symbol: 'Absolutamente NO!</strong> El Master Class está diseñado para principiantes completas. Empezamos desde lo más básico y te llevamos de la mano hasta convertirte en una experta. Más del 85% de nuestras estudiantes exitosas nunca habían hecho manualidades antes.
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>¿Cuánto dinero necesito para empezar?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Con $50-80 USD ya puedes comprar materiales para hacer tus primeros 5-8 productos. Te enseñamos exactamente dónde comprar al mejor precio y cómo reinvertir tus primeras ganancias para crecer rápidamente.
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>¿Realmente puedo ganar $2,000+ mensuales?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <strong>¡, rate: 800, name: 'CLP' },
+            'PEN': { symbol: 'S/', rate: 3.7, name: 'PEN' },
+            'UYU': { symbol: 'Absolutamente NO!</strong> El Master Class está diseñado para principiantes completas. Empezamos desde lo más básico y te llevamos de la mano hasta convertirte en una experta. Más del 85% de nuestras estudiantes exitosas nunca habían hecho manualidades antes.
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>¿Cuánto dinero necesito para empezar?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Con $50-80 USD ya puedes comprar materiales para hacer tus primeros 5-8 productos. Te enseñamos exactamente dónde comprar al mejor precio y cómo reinvertir tus primeras ganancias para crecer rápidamente.
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>¿Realmente puedo ganar $2,000+ mensuales?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <strong>¡, rate: 39, name: 'UYU' }
+        };
+
+        const basePrice = 97;
+        const originalPriceValue = 397;
+        const modalPrice = 67;
+
+        function detectUserLocation() {
+            const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+            
+            // Enhanced timezone mapping
+            const timezoneToCountry = {
+                'America/Argentina': 'ARS',
+                'America/Sao_Paulo': 'BRL',
+                'America/Bogota': 'COP',
+                'America/Santiago': 'CLP',
+                'America/Lima': 'PEN',
+                'America/Montevideo': 'UYU',
+                'America/Mexico_City': 'MXN',
+                'America/New_York': 'USD',
+                'America/Los_Angeles': 'USD',
+                'America/Toronto': 'CAD',
+                'Europe/London': 'GBP',
+                'Europe/Madrid': 'EUR',
+                'Europe/Paris': 'EUR',
+                'Europe/Berlin': 'EUR',
+                'Australia/Sydney': 'AUD'
+            };
+
+            for (let tz in timezoneToCountry) {
+                if (timezone.includes(tz.split('/')[1])) {
+                    return timezoneToCountry[tz];
+                }
+            }
+
+            // Language fallback
+            const lang = navigator.language.toLowerCase();
+            if (lang.includes('es-ar')) return 'ARS';
+            if (lang.includes('pt-br')) return 'BRL';
+            if (lang.includes('es-co')) return 'COP';
+            if (lang.includes('es-cl')) return 'CLP';
+            if (lang.includes('es-pe')) return 'PEN';
+            if (lang.includes('es-uy')) return 'UYU';
+            if (lang.includes('es-mx')) return 'MXN';
+            if (lang.includes('en-ca')) return 'CAD';
+            if (lang.includes('en-gb')) return 'GBP';
+            if (lang.includes('en-au')) return 'AUD';
+            if (lang.includes('fr') || lang.includes('de') || lang.includes('it')) return 'EUR';
+
+            return 'USD';
+        }
+
+        function formatPrice(price, currency) {
+            const curr = currencyRates[currency];
+            const convertedPrice = price * curr.rate;
+            
+            if (currency === 'COP' || currency === 'ARS' || currency === 'CLP') {
+                return `${curr.symbol}${Math.round(convertedPrice).toLocaleString()} ${curr.name}`;
+            } else {
+                return `${curr.symbol}${convertedPrice.toFixed(2)} ${curr.name}`;
+            }
+        }
+
+        function updatePrices() {
+            const userCurrency = detectUserLocation();
+            
+            // Update all price elements
+            const dynamicPriceEl = document.getElementById('dynamicPrice');
+            if (dynamicPriceEl) {
+                dynamicPriceEl.textContent = formatPrice(basePrice, userCurrency);
+            }
+
+            const originalPriceEl = document.getElementById('originalPrice');
+            if (originalPriceEl) {
+                originalPriceEl.textContent = `Valor normal: ${formatPrice(originalPriceValue, userCurrency)}`;
+            }
+
+            const ctaPriceEl = document.getElementById('ctaPrice');
+            if (ctaPriceEl) {
+                ctaPriceEl.textContent = `¡SÍ, QUIERO CAMBIAR MI VIDA - ${formatPrice(basePrice, userCurrency)}!`;
+            }
+
+            const modalPriceEl = document.getElementById('modalPrice');
+            if (modalPriceEl) {
+                modalPriceEl.innerHTML = `<strong>¡Solo ${formatPrice(modalPrice, userCurrency)} en lugar de ${formatPrice(basePrice, userCurrency)}!</strong>`;
+            }
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Enhanced tracking function
+        function trackClick(source) {
+            console.log('Click tracked:', source);
+            // Add your analytics tracking here (Google Analytics, Facebook Pixel, etc.)
+            
+            // Example Google Analytics tracking:
+            // gtag('event', 'click', {
+            //     'event_category': 'CTA',
+            //     'event_label': source
+            // });
+        }
+
+        // Initialize everything when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            startCountdown();
+            updatePrices();
+            observeElements();
+            
+            // Observe stats section for number animation
+            const statsSection = document.querySelector('.stats-section');
+            if (statsSection) {
+                statsObserver.observe(statsSection);
+            }
+        });
+
+        // Page visibility change handling
+        document.addEventListener('visibilitychange', function() {
+            if (document.hidden) {
+                document.title = '🚨 ¡NO TE VAYAS! Tu oferta especial te espera...';
+            } else {
+                document.title = '🌹 Convierte $50 en $3,000 Mensuales con Flores Eternas | Master Class Exclusivo';
+            }
+        });
+    </script>
+</body>
+</html>Absolutamente NO!</strong> El Master Class está diseñado para principiantes completas. Empezamos desde lo más básico y te llevamos de la mano hasta convertirte en una experta. Más del 85% de nuestras estudiantes exitosas nunca habían hecho manualidades antes.
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>¿Cuánto dinero necesito para empezar?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Con $50-80 USD ya puedes comprar materiales para hacer tus primeros 5-8 productos. Te enseñamos exactamente dónde comprar al mejor precio y cómo reinvertir tus primeras ganancias para crecer rápidamente.
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>¿Realmente puedo ganar $2,000+ mensuales?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <strong>¡
