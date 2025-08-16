@@ -1,0 +1,476 @@
+            <div class="ecopetrol-logo">
+                <img src="data:image/png;base64,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<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta Limitada Ecopetrol - Inversión en Acciones</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .colombia-flag {
+            width: 200px;
+            height: 133px;
+            margin: 20px auto;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .flag-yellow {
+            background: #FFCD00;
+            height: 50%;
+        }
+
+        .flag-blue {
+            background: #003087;
+            height: 25%;
+        }
+
+        .flag-red {
+            background: #C8102E;
+            height: 25%;
+        }
+
+        .main-offer {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .main-offer h2 {
+            color: #2c3e50;
+            font-size: 2.2em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .video-section {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .video-container {
+            flex: 1;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .video-container wistia-player {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        .ecopetrol-logo {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .ecopetrol-logo img {
+            max-width: 300px;
+            height: auto;
+        }
+
+        .company-banner {
+            background: linear-gradient(45deg, #8B0000, #DC143C);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 20px 0;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .purchase-highlight {
+            background: #2c5234;
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .info-section {
+            flex: 1;
+        }
+
+        .info-section h3 {
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .contact-form {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1.1em;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+
+        .submit-btn {
+            background: linear-gradient(45deg, #2c3e50, #34495e);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .ceo-section {
+            display: flex;
+            gap: 30px;
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .ceo-info {
+            flex: 2;
+        }
+
+        .ceo-info h3 {
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .ceo-info p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .calculator-section {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .calculator-section h3 {
+            color: #2c3e50;
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        .slider-container {
+            margin: 30px 0;
+        }
+
+        .slider {
+            width: 100%;
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            outline: none;
+            margin: 20px 0;
+        }
+
+        .amount-display {
+            font-size: 2em;
+            color: #2c3e50;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .estimated-income {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 30px;
+        }
+
+        .estimated-income h4 {
+            color: #2c3e50;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .income-amount {
+            font-size: 2.5em;
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .video-section, .ceo-section {
+                flex-direction: column;
+            }
+            
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .main-offer h2 {
+                font-size: 1.6em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>OFERTA LIMITADA para los ciudadanos Colombianos</h1>
+            <div class="colombia-flag">
+                <div class="flag-yellow"></div>
+                <div class="flag-blue"></div>
+                <div class="flag-red"></div>
+            </div>
+        </div>
+
+        <div class="main-offer">
+            <h2>DESCUBRA CÓMO GENERAR HASTA 5.000 USD AL MES INVIRTIENDO EN ACCIONES DE ECOPETROL</h2>
+            
+            <div class="ecopetrol-logo">
+                <svg width="300" height="100" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Iguana -->
+                    <g transform="translate(0, 20)">
+                        <ellipse cx="50" cy="40" rx="25" ry="12" fill="#8BC34A"/>
+                        <ellipse cx="45" cy="38" rx="18" ry="8" fill="#7CB342"/>
+                        <ellipse cx="30" cy="45" rx="12" ry="8" fill="#8BC34A"/>
+                        <circle cx="25" cy="42" r="2" fill="#2E7D32"/>
+                        <!-- Espinas -->
+                        <polygon points="35,25 37,20 39,25" fill="#2E7D32"/>
+                        <polygon points="42,22 44,17 46,22" fill="#2E7D32"/>
+                        <polygon points="50,20 52,15 54,20" fill="#2E7D32"/>
+                        <polygon points="58,22 60,17 62,22" fill="#2E7D32"/>
+                        <!-- Cola -->
+                        <ellipse cx="70" cy="42" rx="15" ry="6" fill="#8BC34A"/>
+                        <rect x="72" y="40" width="3" height="4" fill="#2E7D32"/>
+                        <rect x="76" y="39" width="3" height="4" fill="#2E7D32"/>
+                        <rect x="80" y="40" width="3" height="4" fill="#2E7D32"/>
+                    </g>
+                    
+                    <!-- Texto eco -->
+                    <text x="100" y="70" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#FFD700">eco</text>
+                    <!-- Texto PETROL -->
+                    <text x="200" y="70" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#2E7D32">PETROL</text>
+                    <!-- Slogan -->
+                    <text x="100" y="95" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2E7D32">ENERGÍA PARA EL FUTURO</text>
+                </svg>
+            </div>
+
+            <div class="company-banner">
+                CON LA NUEVA LEY, EL PETRÓLEO ES DE TODOS
+            </div>
+            
+            <div class="video-section">
+                <div class="video-container">
+                    <wistia-player media-id="0w1lbt5pvz" aspect="1.0"></wistia-player>
+                </div>
+                
+                <div class="info-section">
+                    <h3>INVIERTA EN ECOPETROL HOY MISMO</h3>
+                    <div class="contact-form">
+                        <p><strong>Nuestro consejero está listo para asistirte en cada paso</strong></p>
+                        <div class="form-group">
+                            <input type="text" placeholder="Nombre" id="nombre">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Apellido" id="apellido">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Correo electrónico" id="email">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Teléfono" id="telefono">
+                        </div>
+                        <button class="submit-btn" onclick="solicitarInformacion()">Solicitar información</button>
+                        
+                        <!-- Hotmart Payment Widget -->
+                        <div style="margin-top: 20px; text-align: center;">
+                            <a onclick="return false;" href="https://pay.hotmart.com/T92799118C?checkoutMode=2&off=7vqqszqo" class="hotmart-fb hotmart__button-checkout">Comprar ahora</a>
+                        </div>
+                    </div>
+                    <p class="highlight">Inversión mínima $980.000 COP</p>
+                </div>
+            </div>
+
+            <div class="purchase-highlight">
+                <strong>COMPRE 1 ACCIÓN DE LA EMPRESA POR 980.000 PESOS Y OBTENGA RENDIMIENTOS EXTRAORDINARIOS</strong>
+            </div>
+        </div>
+
+        <div class="ceo-section">
+            <div class="ceo-info">
+                <h3>Felipe Bayón - CEO de Ecopetrol</h3>
+                <p>El CEO de Ecopetrol acaba de concluir un acuerdo con El Gobierno colombiano para permitir que todos los ciudadanos inviertan en acciones de Ecopetrol a través de su nueva plataforma de trading.</p>
+                <p><strong>Tienes una oportunidad única para generar $5.000 al mes invirtiendo en acciones de Ecopetrol desde $200</strong></p>
+                <p class="highlight">No pierdas tu oportunidad.</p>
+            </div>
+        </div>
+
+        <div class="calculator-section">
+            <h3>Calcula cuánto puedes ganar</h3>
+            
+            <div class="slider-container">
+                <input type="range" min="980000" max="50000000" value="980000" class="slider" id="inversionSlider" oninput="calcularGanancias()">
+                <div class="amount-display">$<span id="montoInversion">980,000</span> COP</div>
+            </div>
+
+            <div class="estimated-income">
+                <h4>Ingreso mensual estimado</h4>
+                <div class="income-amount">$<span id="ingresoEstimado">11,760,000</span> COP</div>
+            </div>
+        </div>
+
+        <div class="warning">
+            ⚠️ ADVERTENCIA: Las inversiones conllevan riesgos. Los rendimientos pasados no garantizan resultados futuros. Consulte con un asesor financiero antes de invertir.
+        </div>
+    </div>
+
+    <!-- Wistia Video Scripts -->
+    <script src="https://fast.wistia.com/player.js" async></script>
+    <script src="https://fast.wistia.com/embed/0w1lbt5pvz.js" async type="module"></script>
+    <style>
+        wistia-player[media-id='0w1lbt5pvz']:not(:defined) { 
+            background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/0w1lbt5pvz/swatch'); 
+            display: block; 
+            filter: blur(5px); 
+            padding-top:100.0%; 
+        }
+    </style>
+
+    <!-- Hotmart Widget Script -->
+    <script type="text/javascript">
+        function importHotmart(){ 
+            var imported = document.createElement('script'); 
+            imported.src = 'https://static.hotmart.com/checkout/widget.min.js'; 
+            document.head.appendChild(imported); 
+            var link = document.createElement('link'); 
+            link.rel = 'stylesheet'; 
+            link.type = 'text/css'; 
+            link.href = 'https://static.hotmart.com/css/hotmart-fb.min.css'; 
+            document.head.appendChild(link);	
+        } 
+        importHotmart(); 
+    </script>
+
+    <script>
+        function calcularGanancias() {
+            const slider = document.getElementById('inversionSlider');
+            const montoInversion = document.getElementById('montoInversion');
+            const ingresoEstimado = document.getElementById('ingresoEstimado');
+            
+            const inversion = parseInt(slider.value);
+            const rendimiento = inversion * 12; // 1200% anual como en el ejemplo
+            
+            // Formatear números con comas para separadores de miles
+            montoInversion.textContent = inversion.toLocaleString('es-CO');
+            ingresoEstimado.textContent = rendimiento.toLocaleString('es-CO');
+        }
+
+        function solicitarInformacion() {
+            const nombre = document.getElementById('nombre').value;
+            const apellido = document.getElementById('apellido').value;
+            const email = document.getElementById('email').value;
+            const telefono = document.getElementById('telefono').value;
+            
+            if (!nombre || !apellido || !email || !telefono) {
+                alert('Por favor, complete todos los campos.');
+                return;
+            }
+            
+            // Simulación de envío de información
+            alert('¡Gracias por tu interés! Nuestro consejero se pondrá en contacto contigo pronto.\n\n' + 
+                  'Información registrada:\n' +
+                  'Nombre: ' + nombre + ' ' + apellido + '\n' +
+                  'Email: ' + email + '\n' +
+                  'Teléfono: ' + telefono);
+            
+            // Limpiar formulario
+            document.getElementById('nombre').value = '';
+            document.getElementById('apellido').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('telefono').value = '';
+        }
+
+        // Inicializar calculator
+        calcularGanancias();
+    </script>
+</body>
+</html>
