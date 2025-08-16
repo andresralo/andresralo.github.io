@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta Limitada Ecopetrol - Inversión en Acciones</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .colombia-flag {
+            width: 200px;
+            height: 133px;
+            margin: 20px auto;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .flag-yellow {
+            background: #FFCD00;
+            height: 50%;
+        }
+
+        .flag-blue {
+            background: #003087;
+            height: 25%;
+        }
+
+        .flag-red {
+            background: #C8102E;
+            height: 25%;
+        }
+
+        .main-offer {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .main-offer h2 {
+            color: #2c3e50;
+            font-size: 2.2em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .video-section {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .video-container {
+            flex: 1;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+
+        .ecopetrol-logo {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .ecopetrol-logo img {
+            max-width: 300px;
+            height: auto;
+        }
+
+        .company-banner {
+            background: linear-gradient(45deg, #8B0000, #DC143C);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 20px 0;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .purchase-highlight {
+            background: #2c5234;
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .info-section {
+            flex: 1;
+        }
+
+        .info-section h3 {
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .contact-form {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1.1em;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+
+        .submit-btn {
+            background: linear-gradient(45deg, #2c3e50, #34495e);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .ceo-section {
+            display: flex;
+            gap: 30px;
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .ceo-info {
+            flex: 2;
+        }
+
+        .ceo-info h3 {
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .ceo-info p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .calculator-section {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .calculator-section h3 {
+            color: #2c3e50;
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        .slider-container {
+            margin: 30px 0;
+        }
+
+        .slider {
+            width: 100%;
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            outline: none;
+            margin: 20px 0;
+        }
+
+        .amount-display {
+            font-size: 2em;
+            color: #2c3e50;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .estimated-income {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 30px;
+        }
+
+        .estimated-income h4 {
+            color: #2c3e50;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .income-amount {
+            font-size: 2.5em;
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .video-section, .ceo-section {
+                flex-direction: column;
+            }
+            
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .main-offer h2 {
+                font-size: 1.6em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>OFERTA LIMITADA para los ciudadanos Colombianos</h1>
+            <div class="colombia-flag">
+                <div class="flag-yellow"></div>
+                <div class="flag-blue"></div>
+                <div class="flag-red"></div>
+            </div>
+        </div>
+
+        <div class="main-offer">
+            <h2>DESCUBRA CÓMO GENERAR HASTA 5.000 USD AL MES INVIRTIENDO EN ACCIONES DE ECOPETROL</h2>
+            
+            <div class="ecopetrol-logo">
+                <svg width="300" height="100" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Iguana -->
+                    <g transform="translate(0, 20)">
+                        <ellipse cx="50" cy="40" rx="25" ry="12" fill="#8BC34A"/>
+                        <ellipse cx="45" cy="38" rx="18" ry="8" fill="#7CB342"/>
+                        <ellipse cx="30" cy="45" rx="12" ry="8" fill="#8BC34A"/>
+                        <circle cx="25" cy="42" r="2" fill="#2E7D32"/>
+                        <!-- Espinas -->
+                        <polygon points="35,25 37,20 39,25" fill="#2E7D32"/>
+                        <polygon points="42,22 44,17 46,22" fill="#2E7D32"/>
+                        <polygon points="50,20 52,15 54,20" fill="#2E7D32"/>
+                        <polygon points="58,22 60,17 62,22" fill="#2E7D32"/>
+                        <!-- Cola -->
+                        <ellipse cx="70" cy="42" rx="15" ry="6" fill="#8BC34A"/>
+                        <rect x="72" y="40" width="3" height="4" fill="#2E7D32"/>
+                        <rect x="76" y="39" width="3" height="4" fill="#2E7D32"/>
+                        <rect x="80" y="40" width="3" height="4" fill="#2E7D32"/>
+                    </g>
+                    
+                    <!-- Texto eco -->
+                    <text x="100" y="70" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#FFD700">eco</text>
+                    <!-- Texto PETROL -->
+                    <text x="200" y="70" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#2E7D32">PETROL</text>
+                    <!-- Slogan -->
+                    <text x="100" y="95" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2E7D32">ENERGÍA PARA EL FUTURO</text>
+                </svg>
+            </div>
+
+            <div class="company-banner">
+                CON LA NUEVA LEY, EL PETRÓLEO ES DE TODOS
+            </div>
+            
+            <div class="video-section">
+                <div class="video-container">
+                    <iframe src="https://tupostretentacion.wistia.com/medias/0w1lbt5pvz?autoPlay=false&controlsVisibleOnLoad=true&playButton=true&smallPlayButton=true&playbar=true&fullscreenButton=true&volumeControl=true&version=v1&videoWidth=640&videoHeight=360" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" msallowfullscreen width="100%" height="300"></iframe>
+                </div>
+                
+                <div class="info-section">
+                    <h3>INVIERTA EN ECOPETROL HOY MISMO</h3>
+                    <div class="contact-form">
+                        <p><strong>Nuestro consejero está listo para asistirte en cada paso</strong></p>
+                        <div class="form-group">
+                            <input type="text" placeholder="Nombre" id="nombre">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Apellido" id="apellido">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Correo electrónico" id="email">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Teléfono" id="telefono">
+                        </div>
+                        <button class="submit-btn" onclick="solicitarInformacion()">Solicitar información</button>
+                    </div>
+                    <p class="highlight">Inversión mínima $200</p>
+                </div>
+            </div>
+
+            <div class="purchase-highlight">
+                <strong>COMPRE 1 ACCIÓN DE LA EMPRESA POR 980.000 PESOS Y OBTENGA RENDIMIENTOS EXTRAORDINARIOS</strong>
+            </div>
+        </div>
+
+        <div class="ceo-section">
+            <div class="ceo-info">
+                <h3>Felipe Bayón - CEO de Ecopetrol</h3>
+                <p>El CEO de Ecopetrol acaba de concluir un acuerdo con El Gobierno colombiano para permitir que todos los ciudadanos inviertan en acciones de Ecopetrol a través de su nueva plataforma de trading.</p>
+                <p><strong>Tienes una oportunidad única para generar $5.000 al mes invirtiendo en acciones de Ecopetrol desde $200</strong></p>
+                <p class="highlight">No pierdas tu oportunidad.</p>
+            </div>
+        </div>
+
+        <div class="calculator-section">
+            <h3>Calcula cuánto puedes ganar</h3>
+            
+            <div class="slider-container">
+                <input type="range" min="200" max="10000" value="200" class="slider" id="inversionSlider" oninput="calcularGanancias()">
+                <div class="amount-display">$<span id="montoInversion">200</span></div>
+            </div>
+
+            <div class="estimated-income">
+                <h4>Ingreso mensual estimado</h4>
+                <div class="income-amount">$<span id="ingresoEstimado">2400.00</span></div>
+            </div>
+        </div>
+
+        <div class="warning">
+            ⚠️ ADVERTENCIA: Las inversiones conllevan riesgos. Los rendimientos pasados no garantizan resultados futuros. Consulte con un asesor financiero antes de invertir.
+        </div>
+    </div>
+
+    <script>
+        function calcularGanancias() {
+            const slider = document.getElementById('inversionSlider');
+            const montoInversion = document.getElementById('montoInversion');
+            const ingresoEstimado = document.getElementById('ingresoEstimado');
+            
+            const inversion = parseInt(slider.value);
+            const rendimiento = inversion * 12; // 1200% anual como en el ejemplo
+            
+            montoInversion.textContent = inversion;
+            ingresoEstimado.textContent = rendimiento.toFixed(2);
+        }
+
+        function solicitarInformacion() {
+            const nombre = document.getElementById('nombre').value;
+            const apellido = document.getElementById('apellido').value;
+            const email = document.getElementById('email').value;
+            const telefono = document.getElementById('telefono').value;
+            
+            if (!nombre || !apellido || !email || !telefono) {
+                alert('Por favor, complete todos los campos.');
+                return;
+            }
+            
+            // Simulación de envío de información
+            alert('¡Gracias por tu interés! Nuestro consejero se pondrá en contacto contigo pronto.\n\n' + 
+                  'Información registrada:\n' +
+                  'Nombre: ' + nombre + ' ' + apellido + '\n' +
+                  'Email: ' + email + '\n' +
+                  'Teléfono: ' + telefono);
+            
+            // Limpiar formulario
+            document.getElementById('nombre').value = '';
+            document.getElementById('apellido').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('telefono').value = '';
+        }
+
+        // Inicializar calculator
+        calcularGanancias();
+    </script>
+</body>
+</html>
