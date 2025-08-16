@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥 CÓDIGO ÍNTIMO - Manual Prohibido</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d1b4e 50%, #1a1a1a 100%);
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(120, 53, 220, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(220, 53, 120, 0.3) 0%, transparent 50%),
+                linear-gradient(135deg, #1a1a1a 0%, #2d1b4e 50%, #1a1a1a 100%);
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="1" fill="%23ffffff" opacity="0.03"/><circle cx="80" cy="80" r="1" fill="%23ffffff" opacity="0.02"/><circle cx="40" cy="60" r="0.5" fill="%23ffffff" opacity="0.04"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>') repeat;
+            opacity: 0.1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+        
+        .hero-image {
+            max-width: 300px;
+            width: 100%;
+            border-radius: 15px;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .hero-image:hover {
+            transform: scale(1.05);
+        }
+        
+        .badge {
+            background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #ffffff, #ff8e8e, #ffd93d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.1;
+            text-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+        }
+        
+        .hero .subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            color: #e0e0e0;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 300;
+        }
+        
+        .pain-points {
+            margin: 40px 0;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .pain-points h3 {
+            color: #ff8e8e;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+        
+        .pain-point {
+            margin: 10px 0;
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+        
+        .cta-button {
+            background: linear-gradient(135deg, #ff6b6b, #ff8e8e, #ffd93d);
+            color: #1a1a1a;
+            padding: 18px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 20px 0;
+            box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(255, 107, 107, 0.6);
+        }
+        
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .cta-button:hover::before {
+            left: 100%;
+        }
+        
+        .features {
+            padding: 80px 0;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        
+        .features h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            background: linear-gradient(135deg, #ffffff, #ff8e8e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .feature-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+            padding: 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        .feature-card h3 {
+            color: #ff8e8e;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .testimonial {
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .testimonial-card {
+            max-width: 800px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .testimonial-quote {
+            font-size: 1.4rem;
+            font-style: italic;
+            margin-bottom: 20px;
+            color: #e0e0e0;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            color: #ff8e8e;
+        }
+        
+        .section-image {
+            max-width: 400px;
+            width: 100%;
+            border-radius: 20px;
+            margin: 30px 0;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease;
+        }
+        
+        .section-image:hover {
+            transform: translateY(-10px);
+        }
+        
+        .image-container {
+            text-align: center;
+            margin: 50px 0;
+        }
+        
+        .final-cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #ffffff, #ff8e8e, #ffd93d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .urgency {
+            background: rgba(255, 107, 107, 0.2);
+            color: #ff8e8e;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 30px 0;
+            border: 1px solid rgba(255, 107, 107, 0.3);
+        }
+        
+        .final-cta {
+            padding: 80px 0;
+            text-align: center;
+            background: 
+                radial-gradient(circle at 50% 50%, rgba(255, 107, 107, 0.2) 0%, transparent 70%),
+                linear-gradient(135deg, #1a1a1a 0%, #2d1b4e 100%);
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero-image {
+                max-width: 250px;
+            }
+            
+            .container {
+                padding: 0 15px;
+            }
+        
+        .floating-elements {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .floating-element {
+            position: absolute;
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .floating-element:nth-child(1) {
+            top: 20%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+        
+        .floating-element:nth-child(2) {
+            top: 60%;
+            right: 15%;
+            animation-delay: 2s;
+        }
+        
+        .floating-element:nth-child(3) {
+            bottom: 20%;
+            left: 20%;
+            animation-delay: 4s;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-elements">
+        <div class="floating-element">🔥</div>
+        <div class="floating-element">💫</div>
+        <div class="floating-element">✨</div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="badge">🔥 MANUAL PROHIBIDO</div>
+                <h1>CÓDIGO ÍNTIMO</h1>
+                <p class="subtitle">20 Posiciones del Kamasutra Que Lo Cambian Todo</p>
+                
+                <img src="https://previews.123rf.com/images/baranovska/baranovska2011/baranovska201100021/159851239-kama-sutra-poster-on-white-background-3d-dark-red-and-blue-icon-collection-vector-illustration.jpg" alt="Kamasutra Positions" class="hero-image">
+                
+                <div class="pain-points">
+                    <h3>¿Te sientes identificado?</h3>
+                    <div class="pain-point">💔 ¿Hace cuánto no te mira con deseo?</div>
+                    <div class="pain-point">🌙 ¿Hace cuánto sus caricias dejaron de buscarte?</div>
+                    <div class="pain-point">😔 ¿Hace cuánto el sexo se volvió rutina... o simplemente desapareció?</div>
+                    <div class="pain-point" style="margin-top: 20px; font-weight: bold; color: #ff8e8e;">En qué momento dejamos de tocarnos?</div>
+                </div>
+                
+                <a href="https://go.hotmart.com/F101396201I?ap=e79c" class="cta-button">
+                    🔥 OBTENER CÓDIGO ÍNTIMO AHORA
+                </a>
+                
+                <p style="margin-top: 20px; opacity: 0.8;">Recupera el deseo, el contacto físico y la conexión emocional con tu pareja</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>¿Qué incluye CÓDIGO ÍNTIMO?</h2>
+            
+            <div class="image-container">
+                <img src="https://phantom-marca.unidadeditorial.es/41f71ab249cfc449890c6d9bf49a6f8a/resize/828/f/jpg/assets/multimedia/imagenes/2023/08/10/16916574728151.jpg" alt="Intimidad en pareja" class="section-image">
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">📖</span>
+                    <h3>+20 Posiciones Ilustradas</h3>
+                    <p>Seleccionadas cuidadosamente para activar deseo real y auténtico, no solo técnicas mecánicas.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">💡</span>
+                    <h3>Beneficios Emocionales y Físicos</h3>
+                    <p>Cada postura incluye conexión visual, seguridad femenina y liderazgo masculino detallados.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">🎯</span>
+                    <h3>Guía para Crear el Ambiente Ideal</h3>
+                    <p>Según el estado emocional de tu pareja. La clave para romper la tensión y reconectar.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">⚡</span>
+                    <h3>Tips de Presencia Masculina</h3>
+                    <p>Para liderar la intimidad desde la calma, no desde la ansiedad. Confianza auténtica.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">👁️</span>
+                    <h3>Lenguaje Visual Claro</h3>
+                    <p>Nada complejo, todo accionable. Diseñado para hombres que quieren resultados inmediatos.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">🚀</span>
+                    <h3>Resultados Inmediatos</h3>
+                    <p>Diseñado para usarse de inmediato y ver cambios desde el primer encuentro íntimo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial">
+        <div class="container">
+            <div class="image-container">
+                <img src="https://m.media-amazon.com/images/S/pv-target-images/814eaa0582abefdd5db25c109d439dd490c389eeba1129205223a92b2dfb466f._SX1080_FMjpg_.jpg" alt="Conexión íntima" class="section-image">
+            </div>
+            
+            <div class="testimonial-card">
+                <p class="testimonial-quote">
+                    "No encontrarás teoría barata, ni frases mágicas, ni trucos de seducción vacíos. 
+                    Este es un manual para actuar con intención, con poder, con presencia."
+                </p>
+                <p class="testimonial-author">- Gold Mind Academy</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="final-cta">
+        <div class="container">
+            <h2>Recupera Ese Lugar Donde Ella No Solo Quiere Acostarse Contigo...</h2>
+            <p style="font-size: 1.3rem; margin-bottom: 30px; color: #e0e0e0;">
+                Sino también sentirse completamente tocada, mirada y deseada por ti.
+            </p>
+            
+            <div class="urgency">
+                <h3>⚡ El momento es AHORA</h3>
+                <p>Cada día que pasas sin actuar es otro día donde la distancia crece. No esperes más.</p>
+            </div>
+            
+            <div class="image-container">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/kamasutra-1669041512.jpg?crop=1.00xw:0.846xh;0,0&resize=1200:*" alt="Kamasutra guide" class="section-image">
+            </div>
+            
+            <a href="https://go.hotmart.com/F101396201I?ap=e79c" class="cta-button" style="font-size: 1.4rem; padding: 20px 50px;">
+                🔥 TRANSFORMAR MI RELACIÓN AHORA
+            </a>
+            
+            <p style="margin-top: 30px; opacity: 0.8;">
+                ✅ Manual visual y práctico<br>
+                ✅ Sin teoría barata ni trucos vacíos<br>
+                ✅ Para hombres que quieren resultados reales
+            </p>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add some interactive effects
+        document.querySelectorAll('.feature-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Parallax effect for hero
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero');
+            hero.style.transform = `translateY(${scrolled * 0.1}px)`;
+        });
+
+        // CTA button click tracking (you can integrate with analytics)
+        document.querySelectorAll('.cta-button').forEach(button => {
+            button.addEventListener('click', function() {
+                // Add your analytics tracking here
+                console.log('CTA clicked');
+            });
+        });
+    </script>
+</body>
+</html>
